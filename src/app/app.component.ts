@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { EmployeData } from './shared/models/employees';
 
 @Component({
   selector: 'app-root',
@@ -6,80 +7,91 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Welcome to the World of Angular';
-  fruits: Array<string> = [
-    "Banana - High in Vitamin B6 and C",
-    "Strawberry - Packed with Vitamin C and K",
-    "Apple - Contains Vitamin C and B-complex",
-    "Mango - Loaded with Vitamin A and C",
-    "Blueberry - Full of Vitamin C and K",
-    "Watermelon - Provides Vitamin A and C"
+  title = "Do You Know Angular's Components?";
+     
+
+
+   employees : Array<EmployeData>= [
+    {
+      employeeId: "EMP1001",
+      name: "Robert Wilson",
+      position: "Software Engineer",
+      department: "IT",
+      salary: 75000,
+      hireDate: "2022-06-15"
+    },
+    {
+      employeeId: "EMP1002",
+      name: "Jessica Brown",
+      position: "HR Manager",
+      department: "Human Resources",
+      salary: 65000,
+      hireDate: "2021-09-10"
+    },
+    {
+      employeeId: "EMP1003",
+      name: "Daniel Martinez",
+      position: "Marketing Specialist",
+      department: "Marketing",
+      salary: 58000,
+      hireDate: "2023-01-20"
+    },
+    {
+      employeeId: "EMP1004",
+      name: "Laura Smith",
+      position: "Data Analyst",
+      department: "Analytics",
+      salary: 70000,
+      hireDate: "2020-12-05"
+    }
   ];
 
 
-    landmarks: Array<string> = [
-      "Eiffel Tower - Located in Paris, France",
-      "Great Wall - Found in China and Asia",
-      "Statue of Liberty - Stands in New York, USA",
-      "Colosseum - Located in Rome, Italy",
-      "Taj Mahal - Found in Agra, India",
-      "Pyramids of Giza - Located in Egypt, Africa",
-    ];
-
-      planets: Array<string> = [
-        "Mercury - Smallest and Closest to Sun",
-        "Venus - Hottest Planet with Thick Atmosphere",
-        "Earth - Supports Life and Has Water",
-        "Mars - Known as the Red Planet",
-        "Jupiter - Largest Planet with Great Red Spot",
-        "Saturn - Famous for Its Stunning Rings"
-        
-      ];
-
-
-     
-        languages: Array<string> = [
-          "JavaScript - Used for Web Development",
-          "Python - Popular in AI and Data Science",
-          "Java - Common in Enterprise Applications",
-          "C++ - Powerful for Game Development",
-          "Swift - Essential for iOS Applications",
-          "Kotlin - Official Language for Android"
-          
-        ];
-   
-      
-
-   
-      
-          scientists: Array<string> = [
-            "Albert Einstein - Theory of Relativity",
-            "Isaac Newton - Laws of Motion and Gravity",
-            "Marie Curie - Discovered Radium and Polonium",
-            "Nikola Tesla - Innovated Electrical Power",
-            "Galileo Galilei - Father of Modern Astronomy",
-            "Charles Darwin - Theory of Evolution"
-          ];
-    
-        
-            sports: Array<string> = [
-              "Soccer - FIFA World Cup and UEFA Champions",
-              "Basketball - NBA Finals and Olympic Games",
-              "Cricket - ICC World Cup and T20 Leagues",
-              "Tennis - Wimbledon and US Open",
-              "Formula 1 - Monaco Grand Prix and Championships",
-              "Golf - The Masters and Ryder Cup"
-             
-            ];
-
-             
-    
-            
-          
-
-    }
-    
   
+flightBookingsTables = [
+  [
+      { passengerName: 'Alice', flightNumber: 'A101', destination: 'New York' },
+      { passengerName: 'Bob', flightNumber: 'B202', destination: 'London' },
+      { passengerName: 'Putin', flightNumber: 'T92v', destination: 'Russia' }
+  ],
+
+  [
+      { passengerName: 'Charlie', flightNumber: 'C303', destination: 'Tokyo' },
+      { passengerName: 'Haris', flightNumber: 'D404', destination: 'Paris' },
+      { passengerName: 'Harry', flightNumber: 'ZeOp', destination: 'Taiwan' }
+  ],
+
+  [
+    { passengerName: 'Charlie', flightNumber: 'C303', destination: 'Mosco' },
+    { passengerName: 'Kaya', flightNumber: 'JKr34', destination: 'German' },
+    { passengerName: 'David', flightNumber: 'GT45', destination: 'Afgan' }
+], 
+
+[
+  { passengerName: 'Charlie', flightNumber: 'C303', destination: 'Mosco' },
+  { passengerName: 'Kaya', flightNumber: 'JKr34', destination: 'German' },
+  { passengerName: 'David', flightNumber: 'GT45', destination: 'Afgan' }
+],
+
+
+[
+  { passengerName: 'Charlie', flightNumber: 'C303', destination: 'Mosco' },
+  { passengerName: 'Kaya', flightNumber: 'JKr34', destination: 'German' },
+  { passengerName: 'David', flightNumber: 'GT45', destination: 'Afgan' }
+], 
+
+[
+  { passengerName: 'Charlie', flightNumber: 'C303', destination: 'Mosco' },
+  { passengerName: 'Kaya', flightNumber: 'JKr34', destination: 'German' },
+  { passengerName: 'David', flightNumber: 'GT45', destination: 'Afgan' }
+]
+
+
+]
+
+}
+    
+  // we have array so we will have to craete interFace of this array.
   
 
 

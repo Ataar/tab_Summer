@@ -1,46 +1,66 @@
 
-  
+
+
+                            
 <h1 class="heading">{{ title }}</h1>
-
 <div class="container mt-4">
-<div class="row lists">
+    <div class="row">
+        <div class="col-md-10 offset-md-1">
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead class="headTable">
+                        <tr>
+                            <th>SR NO</th>
+                            <th>Employe ID</th>
+                            <th>Name</th>
+                            <th>Position</th>
+                            <th>Department</th>
+                            <th>Salary</th>
+                            <th>Hire Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let Employe of employees; let i = index">
+                            <td>{{i+1}}</td>
+                            <td>{{Employe.employeeId}}</td>
+                            <td>{{Employe.name}}</td>
+                            <td>{{Employe.position}}</td>
+                            <td>{{Employe.department}}</td>
+                            <td>{{Employe.salary}}</td>
+                            <td>{{Employe.hireDate}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 
-<div class="col-md-4">
-<ul class="list-group">
-<li *ngFor = "let list01 of fruits" class="list-group-item">{{list01}}</li>
-</ul>
-</div>
-
-<div class="col-md-4">
-<ul class="list-group">
-<li *ngFor = "let list02 of landmarks " class="list-group-item">{{list02}}</li>
-</ul>
-</div>
+    
 
 
-<div class="col-md-4">
-<ul class="list-group">
-<li *ngFor = "let list03 of planets" class="list-group-item">{{list03}}</li>
-</ul>
-</div>
+    <div class="row">
+        <div class="col-md-4 mt-3" *ngFor="let table of flightBookingsTables">
+            <div class="table-responsive">
+                <table class="table table-bordered text-white">
+                    <thead class="headTable">
+                        <tr>
+                            <th>Name</th>
+                            <th>Flight No</th>
+                            <th>Destination</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let fBook of table">
+                            <td>{{fBook.passengerName}}</td>
+                            <td>{{fBook.flightNumber}}</td>
+                            <td>{{fBook.destination}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div> 
 
-<div class="col-md-4">
-<ul class="list-group">
-<li *ngFor = "let list04 of languages" class="list-group-item">{{list04}}</li>
-</ul>
-</div>
-      
-<div class="col-md-4">
-<ul class="list-group">
-<li *ngFor = "let list05 of scientists" class="list-group-item">{{list05}}</li>
-</ul>
-</div>
 
-<div class="col-md-4">
-  <ul class="list-group">
-  <li *ngFor = "let list06 of sports" class="list-group-item">{{list06}}</li>
-  </ul>
-  </div>
 
-</div>
-</div>
