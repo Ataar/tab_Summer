@@ -25,8 +25,39 @@
 
 
 
-  
+
+
+.table th, .table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+  white-space: nowrap;
+  color: white; 
+}
+
+@media (max-width: 768px) {
   .table th, .table td {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .styleTable th, .styleTable td {
+    font-size: 12px;
+    padding: 6px;
+  }
+}
+
+
+
+
+
+
+
+  
+  .styleTable th, .styleTable td {
     padding: 10px;
     text-align: center;
     border: 1px solid #ddd;
@@ -36,30 +67,36 @@
   
   
   @media (max-width: 768px) {
-    .table th, .table td {
+    .styleTable th, .styleTable td {
       font-size: 14px;
       padding: 8px;
     }
     
-    .table-container {
-      overflow-x: scroll;
-    }
+    // .table-container {
+    //   overflow-x: scroll;
+    // }
   
-    .loader {
-      justify-content: center;
-    }
+    // .loader {
+    //   justify-content: center;
+    // }
   }
   
   @media (max-width: 480px) {
-    .table th, .table td {
+    .styleTable th, .styleTable td {
       font-size: 12px;
       padding: 6px;
+      
+    }
+    .resTh
+    {
+      width: 80%;
+      margin: auto;
     }
   
-    .table th:nth-child(3),
-    .table td:nth-child(3) {
-      display: none; 
-    }
+    // .table th:nth-child(3),
+    // .table td:nth-child(3) {
+    //   display: none; 
+    // }
 
   }
 
