@@ -8,4 +8,9 @@ export interface EmployeData
       hireDate: string
 }
 
+export interface FlightBooking {
+  passengerName: string;
+  flightNumber: string;
+  destination: string;
+}
 

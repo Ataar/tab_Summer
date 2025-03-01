@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { EmployeData } from './shared/models/employees';
+import { EmployeData, FlightBooking } from './shared/models/model';
 
 @Component({
   selector: 'app-root',
@@ -48,7 +48,7 @@ export class AppComponent {
 
 
   
-flightBookingsTables = [
+flightBookingsTables : FlightBooking[][] =  [
   [
       { passengerName: 'Alice', flightNumber: 'A101', destination: 'New York' },
       { passengerName: 'Bob', flightNumber: 'B202', destination: 'London' },
