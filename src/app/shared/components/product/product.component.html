@@ -1,0 +1,16 @@
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4" *ngFor="let product of products">
+            <p class="text"><strong>{{ product.name }}</strong>&nbsp;&nbsp;<strong>{{ product.price }}</strong></p>
+            
+            <img [src]="product.image" alt="Product Image" class="img-fluid d-block m-auto text02">
+            <p>{{ product.details }}</p>
+            <div class="card-footer d-flex justify-content-between">
+                <button class="btn btn-primary">Edit</button>
+                <button class="btn btn-danger">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>

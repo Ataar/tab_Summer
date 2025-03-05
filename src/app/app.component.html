@@ -1,56 +1,13 @@
-<h1 class="heading">{{ title }}</h1>
+
+
+
+<app-products></app-products>
 <div class="container mt-4">
   <div class="row">
-    <div class="col-md-10 offset-md-1">
-      <div class="table-responsive">
-        <table class="table table-bordered">
-          <thead class="headTable">
-            <tr>
-              <th>SR NO</th>
-              <th>Employe ID</th>
-              <th>Name</th>
-              <th>Position</th>
-              <th>Department</th>
-              <th>Salary</th>
-              <th>Hire Date</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr *ngFor="let Employe of employees; let i = index">
-              <td>{{ i + 1 }}</td>
-              <td>{{ Employe.employeeId }}</td>
-              <td>{{ Employe.name }}</td>
-              <td>{{ Employe.position }}</td>
-              <td>{{ Employe.department }}</td>
-              <td>{{ Employe.salary }}</td>
-              <td>{{ Employe.hireDate }}</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-4 mt-3" *ngFor="let table of flightBookingsTables">
-      <div class="table-responsive resTh">
-        <table class="table table-bordered text-white styleTable">
-          <thead class="headTable">
-            <tr>
-              <th>Name</th>
-              <th>Flight No</th>
-              <th>Destination</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr *ngFor="let fBook of table">
-              <td>{{ fBook.passengerName }}</td>
-              <td>{{ fBook.flightNumber }}</td>
-              <td>{{ fBook.destination }}</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
+   <div class="col-md-4 offset-md-4">
+    <!-- <app-product></app-product> -->
+     
+   </div>
+   
   </div>
 </div>
