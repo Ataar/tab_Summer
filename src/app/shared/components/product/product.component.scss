@@ -1,16 +1,125 @@
+
+// .text {
+//     color: #ffffff;
+//     text-align: center;
+//     background-color: rgb(48, 11, 22);
+//     padding: 10px;
+//     font-size: 15px;
+//     margin: 1px 0;
+//     max-width: 100%; 
+//     word-wrap: break-word; 
+// }
+
+// /* Responsive adjustments */
+// @media (max-width: 768px) {
+//     .text {
+//         font-size: 14px;
+//         padding: 8px;
+         
+//     }
+// }
+
+
+// @media (max-width: 480px) {
+   
+//     .text[_ngcontent-rao-c1] {
+//         color: #fff;
+//         text-align: center;
+//         background-color: #300b16;
+//         padding: 10px;
+//         font-size: 15px;
+//         // margin-top: 10px; 
+//         /* width: 160px; */
+//         margin: 1px 22px;
+//     }
+// }
+
+
+
+// .text02 {
+//     width: 100%;   
+//     max-width: 350px;   
+//     height: auto;  
+//     object-fit: cover; 
+//     display: block; 
+//     margin: 0 auto;
+// }
+
+// /* Responsive adjustments */
+// @media (max-width: 480px) {
+//     .text02 {
+//         max-width: 100%;
+//         height: auto;
+//     }
+// }
+
+// p {
+//     text-align: center;
+//     color: rgb(15, 12, 12);
+//     margin: 10px auto;
+//     max-width: 90%;
+//     font-size: 16px;
+// }
+
+// /* Further adjustments for small screens */
+// @media (max-width: 480px) {
+//     p {
+//         font-size: 14px;
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
 .text
 {
     
-    // font-weight: bold;
+    
     color: #ffffff;
     text-align: center;
     background-color: rgb(48, 11, 22);
     padding: 10px;
     font-size: 15px;
-    margin-top: 10px;
-    
+    margin: 1px 0;
     
 }
+
+
+
+@media (max-width: 480px) {
+
+   .text {
+    color: #ffffff;
+    text-align: center;
+    background-color: rgb(48, 11, 22);
+    padding: 10px;
+    font-size: 15px;
+    margin: 1px 22px;
+}
+
+@media (max-width: 375px)
+{
+    .text {
+        color: #ffffff;
+        text-align: center;
+        background-color: rgb(48, 11, 22);
+        padding: 10px;
+        font-size: 15px;
+        margin: 1px 0px;
+    }
+}
+}
+
+
 
 .text02 {
     width: 350px;   
