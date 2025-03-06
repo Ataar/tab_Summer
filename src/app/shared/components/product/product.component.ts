@@ -34,7 +34,7 @@ export class ProductComponent  // it is typeScript class so we have to convert i
             name: 'prettiest cities',
             price: '',
             image: 'https://media.travelbag.co.uk/media/izsivlpn/dubai-skyline-at-night.jpg?rxy=0.5,0.5&rmode=Crop&quality=80&width=1080&height=1080&format=webp',
-            details: 'Lemon juice is a popular ingredient in cooking and baking and may be used as a substitute for vinegar. Lemon juice is extracted from fresh lemons and used in cooking and baking. Besides its culinary uses, lemon juice has various health benefits associated with it.'
+            details: 'Dubai is one of the prettiest cities in the world. The city is known for its modern architecture, luxury shopping, and a lively nightlife scene. Dubai is also home to some of the most beautiful beaches in the world, making it a popular destination for tourists looking to relax and unwind. The city is also known for its stunning skyline, which is dominated by the iconic Burj Khalifa, the tallest building in the world.'
           },
           {
             name: 'Indian Dosa Recipe',
