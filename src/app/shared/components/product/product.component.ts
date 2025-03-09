@@ -1,3 +1,5 @@
+
+
 import { Component } from "@angular/core";
 
 
@@ -11,43 +13,72 @@ import { Component } from "@angular/core";
 
 export class ProductComponent  // it is typeScript class so we have to convert into component means is to decorate the class.  
 {
-    products = [
-        {
-          name: 'Moto Edge 60 Ultra 2025',
-          price: '₹70000',
-          image: 'https://udaipurkiran.in/wp-content/uploads/2024/10/Moto-Edge-60-Ultra-2025.jpg',
-          details: 'Moto Edge 60 Ultra 2025 is a new smartphone by Motorola, and Edge 60 Ultra 2025 price is $70000, on this page you can find the best and most updated price of Edge 60 Ultra 2025 with detailed specifications and features.'
-        },
-        {
-          name: 'Buttermilk',
-          price: '₹100',
-          image: 'https://i.ndtvimg.com/i/2015-06/buttermilk-taste-test_625x350_51434087071.jpg',
-          details: 'Buttermilk is a fermented dairy drink. Traditionally, it was the liquid left behind after churning butter out of cultured cream. Today, most buttermilk is cultured. It is common in warm climates where unrefrigerated fresh milk sours quickly.'
-        },
-        {
-          name: 'Lemon Juice',
-          price: '₹ 300',
-          image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSspa4OzWiTAEJSPttYwQn1lPFrPZ-XBEVrSw&s',
-          details: 'Lemon juice is a popular ingredient in cooking and baking and may be used as a substitute for vinegar. Lemon juice is extracted from fresh lemons and used in cooking and baking. Besides its culinary uses, lemon juice has various health benefits associated with it.'
-        },
-        {
-            name: 'prettiest cities',
-            price: '',
-            image: 'https://media.travelbag.co.uk/media/izsivlpn/dubai-skyline-at-night.jpg?rxy=0.5,0.5&rmode=Crop&quality=80&width=1080&height=1080&format=webp',
-            details: 'Dubai is one of the prettiest cities in the world. The city is known for its modern architecture, luxury shopping, and a lively nightlife scene. Dubai is also home to some of the most beautiful beaches in the world, making it a popular destination for tourists looking to relax and unwind. The city is also known for its stunning skyline, which is dominated by the iconic Burj Khalifa, the tallest building in the world.'
-          },
-          {
-            name: 'Indian Dosa Recipe',
-            price: '₹80',
-            image: 'https://images.alphacoders.com/862/thumb-1920-862639.jpg',
-            details: 'The masala dosa finds its origins in the Tuluva Mangalorean cuisine of Karnataka. This dish combines a regular dosa with a lightly spiced potato filling that is cooked with green chillies and the South Indian star- curry leaves.'
-          },
-          {
-            name: 'Green park',
-            price: '',
-            image: 'https://static.toiimg.com/thumb/msid-86485225,width-748,height-499,resizemode=4,imgsize-208364/Beautiful-green-parks-to-visit-in-Udaipur.jpg',
-            details: 'Udaipur is not just the city of lakes but is also the city of parks! The city has a number of green spaces which are as famous as any palaces and forts in Rajasthan. These parks are Udaipur heritage, and are noted for offering tremendous sunsets and sunrise views. These spaces are every nature lover’s dream and are best suited for family outings.'
-          }
-      ];
-      
+    
+  product_name:string = 'Moto Edge 60 Ultra 2025';  // string interpolation.
+  product_price:string = '₹70000';
+
+
+  product_name1:string = 'Buttermilk';          // property binding.
+  product_price1:string = '₹100';
+
+
+  product_name2:string = 'Apple Juice';       // property binding.
+  product_price2:string = '₹50';
+get formattedProduct(): string {
+  return `${this.product_name2}  ${this.product_price2}`;
 }
+ 
+response: string = `<strong><span>This is a response from the server</span></strong>`;
+  
+
+
+
+
+
+
+//  event binding
+
+ onKeyUp(eve:Event)
+ {
+    let val = (eve.target as HTMLInputElement).value;
+    console.log(val);
+  }
+
+
+ //  event binding 
+ onClick(getPro : HTMLInputElement)
+
+ {
+    console.log(getPro.value);
+ }
+}
+
+
+
+
+// Notes:-
+
+
+// 1 - eve.target represents the HTML element that triggered the event—in this case, the <input> field.
+
+// 2 - here HTMLInputElement is a built in interface that is used to access the value property of the input element.
+// and it provides access to the properties and methods specific to <input> elements. 
+
+//  3 - eve.traget does not know about the value property of the input element so using HTMLInputElement we can access the value property of the input element.    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

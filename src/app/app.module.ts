@@ -6,6 +6,9 @@ import { ProductComponent } from './shared/components/product/product.component'
 import { ProductsComponent } from './shared/components/products/products.component';
 import { TestComponent } from './shared/components/test/test.component';
 
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +17,7 @@ import { TestComponent } from './shared/components/test/test.component';
     TestComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
