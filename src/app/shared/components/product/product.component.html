@@ -1,46 +1,5 @@
 
+<input #getData type="text" class="form-control mb-3">
 
-
-<!--  it is a string interpolation -->
-<p class="text mt-4"><strong>{{product_name}}</strong>&nbsp;&nbsp;<strong>{{ product_price }}</strong></p>
-
-
-
-
-
-
-<!--  Property binding  -->
-<!-- it is html element and also document object -->
-
-<p class="text"><strong [innerText]="product_name1"></strong>&nbsp;&nbsp;<strong [innerText]="product_price1"></strong></p>
-
-
-<!--  Property binding  -->
-<!-- it is html element and also document object -->
-<input type="text" [value]="formattedProduct" class="form-control text-center"> <!---    here input has value property as [value]       --->         
-
-
-
-<!--  Property binding  -->
-<p [innerHTML]="response" style="color: rgb(73, 5, 53);" class="text-center mt-3"></p>
-
-
-
-
-
-
-
-<!--  event binding  -->
-<input (keyup)="onKeyUp($event)" type="text" class="form-control mb-3">
-
-
-<!--  event binding  -->
-<input #getproduct  type="text" class="form-control mb-3">
-<!-- #getproduct is element refrence means document object -->
-<button (click)="onClick(getproduct )" class="btn btn-primary mb-3">Add Product</button>
-
-
-
-
-
-
+<!-- <button (click)="onClick(getData)" class="btn btn-outline-info d-block m-auto">Add Todo</button> -->
+<button (click)="onClick()" class="btn btn-outline-info d-block m-auto">Add Todo</button>
