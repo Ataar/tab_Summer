@@ -1,0 +1,92 @@
+
+h2
+{
+    color:white;
+    // font-size:30px;
+    text-align: center;
+    font-family: Georgia;
+    margin-bottom: 25px;
+    
+}
+
+.col-md-8
+{
+    margin: 0 18%;
+    // padding: 0 16px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    // background-color: #007bff;
+    background-color: rgb(129, 230, 174);
+
+}
+.nav-item a
+{
+    display:block;
+    color:rgb(250, 229, 229);
+    font-family: Georgia;
+    border: 1px solid rgb(10, 233, 214);
+    margin:0 35px;
+    // background-color: rgb(129, 230, 174);
+    padding: 10px 25px;
+    
+}
+.card
+{
+    margin:30px auto;
+    width:70%;
+}
+@media (max-width: 768px) {
+    .nav-item a {
+        font-size: 17px;  /* More readable size */
+        margin: 5px 12px;  /* Adds spacing */
+        display: flex;  
+        justify-content: center;
+        align-items: center;
+        padding: 8px 13px; /* Improves touch area */
+        text-align: center;
+    }
+
+    .card
+    {
+        width:90%;
+        height: 30%;
+    }
+
+    .card .card-body{
+       font-size: 16px;
+       font-style:italic;
+       text-align: justify;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .nav-item a , li{
+        font-size: 12px;  /* More readable size */
+        display: block; 
+        margin: 2px auto;  /* Adds spacing */
+        text-align: center;
+
+        text-align: center;
+        width:80%;
+        
+    }
+}
+
+
+
+// @media (max-width: 480px) {
+//     .nav-item a {
+//         font-size: 12px;  /* More readable size */
+//         margin: 5px 12px;  /* Adds spacing */
+//         display: flex;  
+//         justify-content: center;
+//         align-items: center;
+//         padding: 8px 15px; /* Improves touch area */
+//         text-align: center;
+//     }
+// }
+

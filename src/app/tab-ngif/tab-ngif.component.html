@@ -1,0 +1,92 @@
+<h2>Tab Component *ngif</h2>
+<div class="row">
+  <div class="col-md-8">
+
+    <ul class="nav nav-pills">
+      
+      <li class="nav-item">
+        <a (click)="slectedItem='HTML'"
+        [ngClass]="{
+          'active' : slectedItem.toUpperCase().includes('HTML')
+        }" href="javaScript:;" class="nav-link active"> INDIA </a>
+      </li>
+  
+      <li class="nav-item">
+        <a (click)="onTab('SCSS')" 
+        [ngClass]="{
+          'active':slectedItem.toUpperCase().includes('SCSS')
+        }" href="javaScript:;" class="nav-link"> Oranges </a>
+      </li>
+  
+      <li class="nav-item">
+        <a (click)="onTab('TYPESCRIPT')" 
+        [ngClass]="{
+           'active':slectedItem.toUpperCase().includes('TYPESCRIPT')
+        }" href="javaScript:;" class="nav-link"> Forest </a>
+      </li>
+  
+      <li class="nav-item">
+        <a (click)="onTab('ANGULAR')" 
+        [ngClass]="{
+            'active':slectedItem.toUpperCase().includes('ANGULAR')
+        }" href="javaScript:;" class="nav-link"> Ras Malai </a>
+      </li>
+  
+    </ul>
+  
+  </div>
+  
+  <div class="col-md-10 offset-md-1">
+  
+    <div class="tabs-body">
+      <div class="card" *ngIf="slectedItem.toUpperCase().includes('HTML')">
+        <div class="card-body">
+          <strong>INDIA</strong>
+          India is located in South Asia, bordered by Pakistan, China, Nepal, Bhutan, Bangladesh, and Myanmar.
+          It has a diverse landscape, including Himalayas (north), Indo-Gangetic plains (center), deserts (west), and coastal regions (east & south).
+          The country experiences six major climates: tropical, dry, temperate, cold, alpine, and monsoon.ISRO (Indian Space Research Organisation): Sent missions to Mars (Mangalyaan), Moon (Chandrayaan), and Sun (Aditya L1).
+          Nuclear Power & IT Hub: India is a leading power in software development and artificial intelligence.
+        </div>
+      </div>
+      <div class="card" *ngIf="slectedItem.toUpperCase().includes('SCSS')">
+        <div class="card-body">
+          <strong>Orange</strong>
+          Oranges are one of the most popular and nutritious fruits in the world. They belong to the citrus family (Citrus × sinensis) and are known for their sweet, juicy flavor and high vitamin C content.
+          Oranges are one of the most popular and nutritious fruits in the world. They belong to the citrus family (Citrus × sinensis) and are known for their sweet, juicy flavor and high vitamin C content.
+          Oranges are one of the most popular and nutritious fruits in the world. They belong to the citrus family (Citrus × sinensis) and are known for their sweet, juicy flavor and high vitamin C content.Navel Orange – Sweet, seedless, and easy to peel.
+          Valencia Orange – Best for juice, with a slightly tangy taste.
+          Blood Orange – Reddish flesh with a berry-like flavor.
+          Mandarin Orange – Small, easy to peel, and sweeter than regular oranges.
+          Seville Orange – Bitter and mainly used for marmalade.
+        </div>
+      </div>
+      <div class="card"*ngIf="slectedItem.toUpperCase().includes('TYPESCRIPT')">
+        <div class="card-body">
+          <strong>Forset</strong>
+          A forest is a large area covered with trees and other vegetation. It is one of the most important ecosystems on Earth, providing habitat for wildlife, maintaining climate balance, and offering resources for humans. Forests play a crucial role in oxygen production and carbon dioxide absorption, helping to mitigate climate change.
+          A forest is a large area covered with trees and other vegetation. It is one of the most important ecosystems on Earth, providing habitat for wildlife, maintaining climate balance, and offering resources for humans. Forests play a crucial role in oxygen production and carbon dioxide absorption, helping to mitigate climate change.
+          A forest is a large area covered with trees and other vegetation. It is one of the most important ecosystems on Earth, providing habitat for wildlife, maintaining climate balance, and offering resources for humans. Forests play a crucial role in oxygen production and carbon dioxide absorption, helping to mitigate climate change.✔ Oxygen Production – Forests produce about 28% of the world's oxygen.
+          ✔ Carbon Sequestration – Absorb carbon dioxide, reducing the effects of climate change.
+          ✔ Biodiversity Hotspots – Home to 80% of terrestrial species.
+          ✔ Water Cycle Regulation – Help in rainfall formation and prevent floods.
+          ✔ Economic Resources – Provide timber, medicinal plants, fruits, and other products.
+          ✔ Livelihoods – Support millions of people, especially indigenous communities.
+        </div>
+      </div>
+      <div class="card"*ngIf="slectedItem.toUpperCase().includes('ANGULAR')">
+        <div class="card-body">
+          <strong>Ras Malai</strong>
+          Ras Malai is a popular Indian and Bengali dessert made from soft paneer (chhena) dumplings soaked in sweet, thickened milk flavored with cardamom, saffron, and nuts. The dish has a rich, creamy texture and a delicate, melt-in-the-mouth taste.
+          Main Ingredients: Paneer (chhena), milk, sugar, cardamom, saffron, and dry fruits like almonds and pistachios.
+Preparation:
+Small paneer balls are made by curdling milk and shaping them into soft dumplings.
+These are boiled in sugar syrup to expand and absorb sweetness.
+They are then soaked in thickened, flavored milk (rabri).
+Taste & Texture: Sweet, creamy, and spongy with a light saffron and cardamom aroma.
+Serving: Served chilled, garnished with nuts and sometimes rose water.
+Origin: Originally from Bengal, but now loved across India and globally.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

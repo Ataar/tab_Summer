@@ -1,0 +1,47 @@
+<h2>Tab Component *ngFor</h2>
+<div class="col-md-6 offset-md-3">
+<ul class="nav nav-pills">
+<li *ngFor="let tab of skillsArr" 
+    (click)="selectData=tab.skillName" class="nav-item">
+      <a [ngClass]="{
+        active : selectData.toLowerCase().includes(tab.skillName)
+      }"
+      
+      href="javascript:;"  class="nav-link">
+        {{tab.skillName}}
+      </a>  
+    </li>
+  </ul>
+</div>
+
+
+<ng-container *ngFor="let card of skillsArr">
+
+  <div 
+  *ngIf="selectData.includes(card.skillName)
+  "class="card" >
+  <div class="card-body" [innerHTML]="card.skillInfo"></div>
+</div>
+  
+</ng-container>
+
+
+<!-- <div class="col-md-4 offset-md-4">
+  <ul class="nav nav-pills">
+    <li *ngFor="let tab of skillsArr" class="nav-item">
+      <a 
+        href="javascript:void(0)" 
+        class="nav-link" 
+        [ngClass]="{ active: selectData === tab.skillName }"
+        (click)="selectData = tab.skillName">
+        {{ tab.skillName }}
+      </a>  
+    </li>
+  </ul>
+</div>
+
+<ng-container *ngFor="let card of skillsArr">
+  <div *ngIf="selectData === card.skillName" class="card">
+    <div class="card-body" [innerHTML]="card.skillInfo"></div>
+  </div>
+</ng-container> -->

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { StudentComponent } from './student.component';
+import { TabNgifForComponent } from './tab-ngif-for.component';
 
-describe('StudentComponent', () => {
-  let component: StudentComponent;
-  let fixture: ComponentFixture<StudentComponent>;
+describe('TabNgifForComponent', () => {
+  let component: TabNgifForComponent;
+  let fixture: ComponentFixture<TabNgifForComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ StudentComponent ]
+      declarations: [ TabNgifForComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(StudentComponent);
+    fixture = TestBed.createComponent(TabNgifForComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
